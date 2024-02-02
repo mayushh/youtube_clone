@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo{
+  height: 40px;
+  margin:auto;
+  margin-left: 10px;
+  margin-right: 10px;
+    
+}
+.search-box{
+    width: 42vw;
+
+}
+.video-card{
+  flex: flex;
+  width:22vw ;
+  
+
+}
+.video-box{
+  flex: flex;
+  flex-wrap: wrap;
+}
+.player{
+  box-sizing: border-box;
+  width: 680px;
+  min-width: 680px;
+}
+.sideList{
+  width: 350px;
+}
+.scroll-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+/* @media only screen and (min-width: 640px) {
+  .video-card {
+    width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .video-card {
+    width: 33.3333vw; 
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .video-card {
+    width: 25vw; 
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .video-card {
+    width: 20vw; 
+  }
+}
+ */
