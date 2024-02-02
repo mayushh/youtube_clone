@@ -1,20 +1,28 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useGetAllVideoCardData } from '../utils/useGetAllVideoCardData'
-
-import VideoCard from './VideoCard'
+import useViewsRead from '../utils/useViewsRead'
+import RelatedVideoCard from './RelatedVideoCard'
 
 
 const RelatedVideoList = () => {
-   
+
     const videoData = useGetAllVideoCardData()
+    
     return (
         <>
-            <div className='flex flex-wrap justify-center'>
+            <div className=' mt-[-5%]'>
 
-                {videoData.map((items, i) => {
+             {videoData.map((items, i) => {
 
-                    return <div key={i} > <VideoCard videoInfo={items} /></div>
+                    return <div key={i} className='flex wrap mb-3 '>
+
+                    <RelatedVideoCard data={items}/>
+                    </div>
                 })}
+
+              
+
+               
 
             </div>
         </>

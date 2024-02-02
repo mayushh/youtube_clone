@@ -1,30 +1,13 @@
 import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
+import useViewsRead from "../utils/useViewsRead";
 
 const VideoCard = ({videoInfo}) => {
     const {snippet,statistics,id} = videoInfo;
     const {thumbnails,channelTitle,title} = snippet;
     const {viewCount} = statistics;
-    const [views,setViews] = useState(0);
-    
-    const viewSetting = ()=>{
-        if (viewCount >= 1e9) {
-            setViews((viewCount/1e9).toFixed(1) + 'B');
-       }
-       else if (viewCount >= 1e6) {
-          setViews((viewCount/1000000).toFixed(1) + 'M');
-       }
-       else if (viewCount/1000) {
-           setViews((viewCount/1000).toFixed(0) + 'k');
-       }
-       else{
-           setViews(viewCount);
-       }
-    }
-    useEffect(() => {
-      viewSetting()
-    }, [])
-  
+    const views = useViewsRead(viewCount);
+
      return (
         
         <>   <Link to={"/watch?v="+id} >
