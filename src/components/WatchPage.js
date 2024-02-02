@@ -15,14 +15,14 @@ const WatchPage = () => {
         <ReactPlayer playing={true} controls={true} height={"380px"} width={"680px"} url={"https://www.youtube.com/watch?v=" + videoId} />
       </div>
       <div className=''>
-        <p className='font-bold text-xl'>{videoData?.snippet?.title}</p>
+        <p className='font-bold text-xl mt-2'>{videoData?.snippet?.title}</p>
         <p>{videoData?.statistics?.viewCount} views</p>
         <p>{videoData?.snippet?.channelTitle}</p>
       </div>
     </div>
     <div className='sideList mt-6  ml-3 px-2'>
       <div className=' rounded-2xl overflow-hidden'>
-        <div className='overflow-x-scroll  mx-1  scroll-container '>
+        <div className='overflow-x-scroll  pr-2  scroll-container '>
           <ButtonList/>
         </div>
         <div className=' m-1 p-1 px-2'>
