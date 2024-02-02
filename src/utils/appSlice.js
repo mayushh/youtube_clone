@@ -4,7 +4,7 @@ const appSlice = createSlice({
     name: "app",
     initialState: {
         isMenuOpen: false,
-        onClickedVideoCardDetail:[]
+        onClickedVideoCardDetail:""
     },
     reducers: {
         toggleMenu: (state) => {
@@ -14,7 +14,7 @@ const appSlice = createSlice({
             state.isMenuOpen = false;
         },
         updateOnClickedVideoDetail:(state,action)=>{
-            state.onClickedVideoCardDetail.push(action.payload)
+            state.onClickedVideoCardDetail=action.payload
         },
         
     }
