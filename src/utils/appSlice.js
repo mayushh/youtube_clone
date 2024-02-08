@@ -4,7 +4,8 @@ const appSlice = createSlice({
     name: "app",
     initialState: {
         isMenuOpen: false,
-        onClickedVideoCardDetail:""
+        onClickedVideoCardDetail:"",
+        linkValue : ""
     },
     reducers: {
         toggleMenu: (state) => {
@@ -13,11 +14,11 @@ const appSlice = createSlice({
         closeMenu:(state)=>{
             state.isMenuOpen = false;
         },
-        updateOnClickedVideoDetail:(state,action)=>{
-            state.onClickedVideoCardDetail=action.payload
+        updateSearchVal:(state,action)=>{
+           state.linkValue = action.payload;
         },
         
     }
 })
-export const { toggleMenu,closeMenu,updateOnClickedVideoDetail } = appSlice.actions
+export const { toggleMenu,closeMenu,updateSearchVal } = appSlice.actions
 export default appSlice.reducer;
