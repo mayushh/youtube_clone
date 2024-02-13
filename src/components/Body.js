@@ -8,7 +8,7 @@ const Body = ()=>{
     const toggler = useSelector(store=>store.app.isMenuOpen)
     return(
         <>
-            <div className='flex '>
+            <div className='flex pt-20'>
            {(toggler)?<Sidebar/>:<MiniSideBur/>} 
            <Outlet/>
             </div>

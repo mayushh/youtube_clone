@@ -5,6 +5,7 @@ import ButtonList from './ButtonList';
 import RelatedVideoList from './RelatedVideoList';
 import useGetVideoData from '../utils/useGetVideoData';
 import useViewsRead from '../utils/useViewsRead';
+import CommentList from './CommentList';
 const WatchPage = () => {
   const [searchParams] = useSearchParams()
   const videoId = searchParams.get('v');
@@ -16,10 +17,14 @@ const WatchPage = () => {
       <div className=' rounded-2xl overflow-hidden player'>
         <ReactPlayer playing={true} controls={true} height={"380px"} width={"680px"} url={"https://www.youtube.com/watch?v=" + videoId} />
       </div>
+      
       <div className=''>
         <p className='font-bold text-xl mt-2'>{videoData?.snippet?.title}</p>
         <p>{views} views</p>
         <p>{videoData?.snippet?.channelTitle}</p>
+      </div>
+      <div>
+        <CommentList></CommentList>
       </div>
     </div>
     <div className='sideList mt-3  ml-1 px-2'>
