@@ -7,6 +7,7 @@ import useGetVideoData from '../utils/useGetVideoData';
 import useViewsRead from '../utils/useViewsRead';
 import CommentList from './CommentList';
 import DetailsSec from './DetailsSec';
+import { Comments } from '../Constants/Constant';
 const WatchPage = () => {
   const [searchParams] = useSearchParams()
   const videoId = searchParams.get('v');
@@ -25,7 +26,7 @@ const WatchPage = () => {
       </div>
       <DetailsSec videoData={videoData} />
       <div>
-        <CommentList></CommentList>
+        <CommentList k = {Comments}></CommentList>
       </div>
     </div>
     <div className='sideList mt-3  ml-1 px-2'>

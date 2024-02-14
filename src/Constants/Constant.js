@@ -8,51 +8,79 @@ export const Comments = [
     {
         name:"ayush malviya",
         comment:"lorem23j iosdjfj dsoi sif sodi fdsu siejfods ifs odsgdsofh dsiod hodsih ifh sio hoiesh iofh foihfewoi ioseehfois",
-        reply:{
-            name:"ayush malviya",
-            comment:"lorem23j iosdjfj dsoi sif sodi fdsu siejfods ifs odsgdsofh dsiod hodsih ifh sio hoiesh iofh foihfewoi ioseehfois",
-            reply:{
+        reply:[
+            {
                 name:"ayush malviya",
                 comment:"lorem23j iosdjfj dsoi sif sodi fdsu siejfods ifs odsgdsofh dsiod hodsih ifh sio hoiesh iofh foihfewoi ioseehfois",
-                reply:{
-        
-                },
+                reply:[
+                    {
+                        name:"ayush malviya",
+                        comment:"lorem23j iosdjfj dsoi sif sodi fdsu siejfods ifs odsgdsofh dsiod hodsih ifh sio hoiesh iofh foihfewoi ioseehfois",
+                        reply:[
+                            
+                        ]
+                    },
+                    {
+                        name:"ayush malviya",
+                        comment:"lorem23j iosdjfj dsoi sif sodi fdsu siejfods ifs odsgdsofh dsiod hodsih ifh sio hoiesh iofh foihfewoi ioseehfois",
+                        reply:[]
+                    },
+                ]
             },
-        },
+            {
+                name:"ayush malviya",
+                comment:"lorem23j iosdjfj dsoi sif sodi fdsu siejfods ifs odsgdsofh dsiod hodsih ifh sio hoiesh iofh foihfewoi ioseehfois",
+                reply:[]
+            },
+        ]
     },
     {
         name:"ayush malviya",
         comment:"lorem23j iosdjfj dsoi sif sodi fdsu siejfods ifs odsgdsofh dsiod hodsih ifh sio hoiesh iofh foihfewoi ioseehfois",
-        reply:{
-
-        }
+        reply:[]
     },
     {
         name:"ayush malviya",
         comment:"lorem23j iosdjfj dsoi sif sodi fdsu siejfods ifs odsgdsofh dsiod hodsih ifh sio hoiesh iofh foihfewoi ioseehfois",
-        reply:{
-
-        }
+        reply:[
+            {
+                name:"ayush malviya",
+                comment:"lorem23j iosdjfj dsoi sif sodi fdsu siejfods ifs odsgdsofh dsiod hodsih ifh sio hoiesh iofh foihfewoi ioseehfois",
+                reply:[
+                    {
+                        name:"ayush malviya",
+                        comment:"lorem23j iosdjfj dsoi sif sodi fdsu siejfods ifs odsgdsofh dsiod hodsih ifh sio hoiesh iofh foihfewoi ioseehfois",
+                        reply:[
+                            
+                        ]
+                    },
+                    {
+                        name:"ayush malviya",
+                        comment:"lorem23j iosdjfj dsoi sif sodi fdsu siejfods ifs odsgdsofh dsiod hodsih ifh sio hoiesh iofh foihfewoi ioseehfois",
+                        reply:[]
+                    },
+                ]
+            },
+            {
+                name:"ayush malviya",
+                comment:"lorem23j iosdjfj dsoi sif sodi fdsu siejfods ifs odsgdsofh dsiod hodsih ifh sio hoiesh iofh foihfewoi ioseehfois",
+                reply:[]
+            },
+        ]
     },
     {
         name:"ayush malviya",
         comment:"lorem23j iosdjfj dsoi sif sodi fdsu siejfods ifs odsgdsofh dsiod hodsih ifh sio hoiesh iofh foihfewoi ioseehfois",
-        reply:{
-
-        }
+        reply:[]
     },
     {
         name:"ayush malviya",
         comment:"lorem23j iosdjfj dsoi sif sodi fdsu siejfods ifs odsgdsofh dsiod hodsih ifh sio hoiesh iofh foihfewoi ioseehfois",
-        reply:{
-
-        }
+        reply:[]
     },
     {
         name:"ayush malviya",
         comment:"lorem23j iosdjfj dsoi sif sodi fdsu siejfods ifs odsgdsofh dsiod hodsih ifh sio hoiesh iofh foihfewoi ioseehfois",
-        reply:{
-
-        }
+        reply:[]
     },
 ]
