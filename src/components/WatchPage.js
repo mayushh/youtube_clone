@@ -6,6 +6,7 @@ import RelatedVideoList from './RelatedVideoList';
 import useGetVideoData from '../utils/useGetVideoData';
 import useViewsRead from '../utils/useViewsRead';
 import CommentList from './CommentList';
+import DetailsSec from './DetailsSec';
 const WatchPage = () => {
   const [searchParams] = useSearchParams()
   const videoId = searchParams.get('v');
@@ -21,8 +22,8 @@ const WatchPage = () => {
       <div className=''>
         <p className='font-bold text-xl mt-2'>{videoData?.snippet?.title}</p>
         <p>{views} views</p>
-        <p>{videoData?.snippet?.channelTitle}</p>
       </div>
+      <DetailsSec videoData={videoData} />
       <div>
         <CommentList></CommentList>
       </div>
